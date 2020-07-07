@@ -2,8 +2,9 @@
   "name": "mafratechnodejs",
   "description": "NodeJS snippets created by Mafra Tech.",
   "version": "0.0.1",
-  "displayName": "Mafra Tech NodeJS",
+  "displayName": "Mafra Tech NodeJS Snippets",
   "publisher": "MafraTech",
+  "icon": "images/mafratech.png",
   "galleryBanner": {
     "color": "#329A2F",
     "theme": "dark"
