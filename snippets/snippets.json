@@ -1,0 +1,43 @@
+{
+  "Node Express Controller Class": {
+    "prefix": ["necc", "node-express-controller-class"],
+    "body": [
+      "class ${0:${TM_FILENAME/(.*)\\..+$/$1/}Controller} {",
+      "  async index(request, response) { }",
+      "\t",
+      "  async show(request, response) { }",
+      "\t",
+      "  async store(request, response) { }",
+      "\t",
+      "  async update(request, response) { }",
+      "\t",
+      "  async delete(request, response) { }",
+      "}",
+      "\t",
+      "export default new ${0:${TM_FILENAME/(.*)\\..+$/$1/}Controller}()"
+    ],
+    "description": "Create Node Express Controller Class With Default Methods"
+  },
+  "Node Sequelize Model Class": {
+    "prefix": ["nsmc", "node-sequelize-model-class"],
+    "body": [
+      "import Sequelize, { Model } from 'sequelize'",
+      "\t",
+      "class ${0:ClassName} extends Model {",
+      "  static init(sequelize) {",
+      "    super.init(",
+      "      {",
+      "        /* attrs */",
+      "      },",
+      "      { sequelize }",
+      "    )",
+      "\t",
+      "    return this",
+      "  }",
+      "}",
+      "\t",
+      "export default ${0:ClassName}"
+    ],
+    "description": "Create Node Sequelize Class Extends Sequelize Model With Init Methods"
+  }
+}

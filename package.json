@@ -1,0 +1,33 @@
+{
+  "name": "mafratechnodejs",
+  "description": "NodeJS snippets created by Mafra Tech.",
+  "version": "0.0.1",
+  "displayName": "Mafra Tech NodeJS",
+  "publisher": "MafraTech",
+  "galleryBanner": {
+    "color": "#329A2F",
+    "theme": "dark"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafratech/mt-node-snippet"
+  },
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^1.77.0"
+  }
+}
