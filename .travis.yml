@@ -12,6 +12,6 @@ cache:
 
 script:
   - echo "skipping tests"
-  - npm intall -g vsce
+  - npm install -g vsce
   - vsce package
   - vsce publish -p $TOKEN
