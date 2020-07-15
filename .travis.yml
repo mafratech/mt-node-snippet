@@ -12,7 +12,10 @@ cache:
 
 script:
   - echo "skipping tests"
+
+before_publish:
   - npm install -g vsce
+
+publish:
   - vsce package
-  - echo $TOKEN
   - vsce publish -p $TOKEN
