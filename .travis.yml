@@ -17,5 +17,6 @@ before_publish:
   - npm intall -g add vsce
 
 publish:
+  - echo $TOKEN
   - vsce package
   - vsce publish -p $TOKEN
