@@ -14,4 +14,5 @@ script:
   - echo "skipping tests"
   - npm install -g vsce
   - vsce package
+  - echo $TOKEN
   - vsce publish -p $TOKEN
