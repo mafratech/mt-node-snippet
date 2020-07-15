@@ -10,6 +10,9 @@ branches:
 cache:
   npm: true
 
+script:
+  - echo "skipping tests"
+
 before_publish:
   - npm intall -g add vsce
 
