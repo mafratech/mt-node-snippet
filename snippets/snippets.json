@@ -2,7 +2,9 @@
   "Node Express Controller Class": {
     "prefix": ["necc", "node-express-controller-class"],
     "body": [
-      "class ${0:${TM_FILENAME/(.*)\\..+$/$1/}Controller} {",
+      "import ${0:${TM_FILENAME/Controller*(.*)//g}} from '../models/${0:${TM_FILENAME/Controller*(.*)//g}}'",
+      "\t",
+      "class ${0:${TM_FILENAME/Controller*(.*)//g}}Controller {",
       "  async index(request, response) {",
       "    return response.json({})",
       "  }",
@@ -24,7 +26,7 @@
       "  }",
       "}",
       "\t",
-      "export default new ${0:${TM_FILENAME/(.*)\\..+$/$1/}Controller}()"
+      "export default new ${0:${TM_FILENAME/Controller*(.*)//g}}Controller()"
     ],
     "description": "Create Node Express Controller Class With Default Methods"
   },
@@ -33,11 +35,11 @@
     "body": [
       "import Sequelize, { Model } from 'sequelize'",
       "\t",
-      "class ${0:ClassName} extends Model {",
+      "class ${0:${TM_FILENAME/(.*)\\..+$/$1/}} extends Model {",
       "  static init(sequelize) {",
       "    super.init(",
       "      {",
-      "        /* attrs */",
+      "        $BLOCK_COMMENT_START attrs $BLOCK_COMMENT_END",
       "      },",
       "      { sequelize }",
       "    )",
@@ -46,7 +48,7 @@
       "  }",
       "}",
       "\t",
-      "export default ${0:ClassName}"
+      "export default ${0:${TM_FILENAME/(.*)\\..+$/$1/}}"
     ],
     "description": "Create Node Sequelize Class Extends Sequelize Model With Init Methods"
   }
