@@ -26,7 +26,7 @@
       "  }",
       "}",
       "\t",
-      "export default new ${0:${TM_FILENAME/Controller*(.*)//g}}Controller()"
+      "export default new ${0:${TM_FILENAME/Controller*(.*)//g}}Controller()\n"
     ],
     "description": "Create Node Express Controller Class With Default Methods"
   },
@@ -48,8 +48,35 @@
       "  }",
       "}",
       "\t",
-      "export default ${0:${TM_FILENAME/(.*)\\..+$/$1/}}"
+      "export default ${0:${TM_FILENAME/(.*)\\..+$/$1/}}\n"
     ],
     "description": "Create Node Sequelize Class Extends Sequelize Model With Init Methods"
+  },
+  "Sequelize Database Class Config": {
+    "prefix": ["sdcc", "sequelize-database-class-config"],
+    "body": [
+      "import Sequelize from 'sequelize'",
+      "import databaseConfig from '../config/database'",
+      "\t",
+      "$LINE_COMMENT import User from '../app/models/User'",
+      "\t",
+      "const models = [",
+      "  $LINE_COMMENT User,",
+      "]",
+      "\t",
+      "class Database {",
+      "  constructor() {",
+      "    this.init()",
+      "  }",
+      "\t",
+      "  init() {",
+      "    this.connection = new Sequelize(databaseConfig)",
+      "    models.map((model) => model.init(this.connection))",
+      "  }",
+      "}",
+      "\t",
+      "export default new Database()\n"
+    ],
+    "description": "Create Sequelize Database Class configurations with init method"
   }
 }
