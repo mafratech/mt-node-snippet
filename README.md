@@ -34,6 +34,8 @@ Quando você instalar a Extensão, criar as classes de _Controllers_ e _Models_ 
 
 ![NodeJS Sequelize Model Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-nsmc.gif)
 
+![NodeJS Sequelize Model Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-sdcc.gif)
+
 ### Snippets
 
 Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O **⇥** significa a tecla `TAB`.
@@ -42,6 +44,7 @@ Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada 
 | -------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `necc →` | Cria uma estrutura de classe para o `controller` com base no `express` com funções padrão pré definidas, já importando um possível `model` equivalente, utilizando o nome do arquivo como padrão de nome para a classe |
 | `nsmc →` | Cria uma estrutura de classe para o `model` pré definido para o sequelize com utilizando o nome do arquivo como nome do `Model`                                                                                        |
+| `sdcc →` | Cria uma estrutura da classe `Database` com as configurações para inicialização da conexão do sequelize com o banco de dados e envio da configuração para o método `init` dos models                                   |
 
 ## Contato
 
