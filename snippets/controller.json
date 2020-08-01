@@ -1,0 +1,33 @@
+{
+  "Node Express Controller Class": {
+    "prefix": ["necc", "node-express-controller-class"],
+    "body": [
+      "import ${0:${TM_FILENAME/Controller*(.*)//g}} from '../models/${0:${TM_FILENAME/Controller*(.*)//g}}'",
+      "\t",
+      "class ${0:${TM_FILENAME/Controller*(.*)//g}}Controller {",
+      "  async index(request, response) {",
+      "    return response.json({})",
+      "  }",
+      "\t",
+      "  async show(request, response) {",
+      "    return response.json({})",
+      "  }",
+      "\t",
+      "  async store(request, response) {",
+      "    return response.json({})",
+      "  }",
+      "\t",
+      "  async update(request, response) {",
+      "    return response.json({})",
+      "  }",
+      "\t",
+      "  async delete(request, response) {",
+      "    return response.json({})",
+      "  }",
+      "}",
+      "\t",
+      "export default new ${0:${TM_FILENAME/Controller*(.*)//g}}Controller()\n"
+    ],
+    "description": "Create Node Express Controller Class With Default Methods"
+  }
+}

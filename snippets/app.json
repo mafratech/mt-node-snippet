@@ -1,0 +1,20 @@
+{
+  "Node Express App Config": {
+    "prefix": ["neac", "node-express-app-config"],
+    "body": [
+      "import express from 'express'",
+      "$LINE_COMMENT import routes from './routes'",
+      "\t",
+      "const app = express()",
+      "\t",
+      "const server = require('http').Server(app)",
+      "\t",
+      "app.use(express.json())",
+      "\t",
+      "$LINE_COMMENT app.use(routes)",
+      "\t",
+      "export default server\n"
+    ],
+    "description": "Create Node Express App File With Default Configuration"
+  }
+}

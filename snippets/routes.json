@@ -1,0 +1,22 @@
+{
+  "Node Express Routes Config": {
+    "prefix": ["nerc", "node-express-routes-config"],
+    "body": [
+      "import { Router } from 'express'",
+      "\t",
+      "const routes = Router()",
+      "\t",
+      "import ${1:User}Controller from './app/controllers/${1:User}Controller'",
+      "\t",
+      "$LINE_COMMENT ${0:users}",
+      "routes.get('/${0:users}', ${1:User}Controller.index)",
+      "routes.get('/${0:users}/:id', ${1:User}Controller.show)",
+      "routes.post('/${0:users}', ${1:User}Controller.store)",
+      "routes.put('/${0:users}/:id', ${1:User}Controller.update)",
+      "routes.delete('/${0:users}/:id', ${1:User}Controller.delete)",
+      "\t",
+      "export default routes\n"
+    ],
+    "description": "Create Node Routes file importing a example controller and routes"
+  }
+}

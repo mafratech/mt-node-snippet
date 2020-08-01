@@ -30,21 +30,27 @@ Para instalar uma extensão você pode executar o **Command Pallete** através d
 
 Quando você instalar a Extensão, criar as classes de _Controllers_ e _Models_ será bem mais ágil.
 
-![NodeJS Express Controller Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-necc.gif)
+![NodeJS Express Controller Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-neac.gif)
 
-![NodeJS Sequelize Model Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-nsmc.gif)
+![NodeJS Express Controller Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-nerc.gif)
 
 ![NodeJS Sequelize Model Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-sdcc.gif)
 
+![NodeJS Sequelize Model Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-nsmc.gif)
+
+![NodeJS Express Controller Class](https://raw.githubusercontent.com/mafratech/mt-node-snippet/master/images/mafratech-necc.gif)
+
 ### Snippets
 
-Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O **⇥** significa a tecla `TAB`.
+Abaixo segue a lista com todos os Snippets disponíveis e os gatilhos para cada um. O cursor pré selecionado para edição, pode mudar o foco para a próxima seleção utilizando `TAB`
 
-|  Gatilho | Conteúdo                                                                                                                                                                                                               |
-| -------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `necc →` | Cria uma estrutura de classe para o `controller` com base no `express` com funções padrão pré definidas, já importando um possível `model` equivalente, utilizando o nome do arquivo como padrão de nome para a classe |
-| `nsmc →` | Cria uma estrutura de classe para o `model` pré definido para o sequelize com utilizando o nome do arquivo como nome do `Model`                                                                                        |
-| `sdcc →` | Cria uma estrutura da classe `Database` com as configurações para inicialização da conexão do sequelize com o banco de dados e envio da configuração para o método `init` dos models                                   |
+| Gatilho | Conteúdo                                                                                                                                                                                                               |
+| ------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  `neac` | Cria uma estrutura com configuração base para o arquivo app.js                                                                                                                                                         |
+|  `nerc` | Cria uma estrutura com configuração base para o arquivo de rotas da aplicação                                                                                                                                          |
+|  `nsmc` | Cria uma estrutura de classe para o `model` pré definido para o sequelize com utilizando o nome do arquivo como nome do `Model`                                                                                        |
+|  `sdcc` | Cria uma estrutura da classe `Database` com as configurações para inicialização da conexão do sequelize com o banco de dados e envio da configuração para o método `init` dos models                                   |
+|  `necc` | Cria uma estrutura de classe para o `controller` com base no `express` com funções padrão pré definidas, já importando um possível `model` equivalente, utilizando o nome do arquivo como padrão de nome para a classe |
 
 ## Contato
 
