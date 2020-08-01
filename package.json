@@ -1,7 +1,7 @@
 {
   "name": "mafratechnodejs",
   "description": "NodeJS snippets created by Mafra Tech.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "displayName": "Mafra Tech NodeJS Snippets",
   "publisher": "MafraTech",
   "icon": "images/mafratech.png",
@@ -24,7 +24,19 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/snippets.json"
+        "path": "./snippets/controller.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/model.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/app.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/routes.json"
       }
     ]
   },
